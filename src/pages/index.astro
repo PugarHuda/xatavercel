@@ -3,12 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
 // Generated with CLI
-import { getXataClient } from "../xata";
-const xata = getXataClient();
+import { XataClient } from "../xata";
+const xata = new XataClient({ apiKey: xau_sHcg0R5y6IAer6uQii2lQz3O53I0RKzU0 });
 
 const page = await xata.db.nyobain.getPaginated();
 console.log(page.records);
-
+export const prerender=true;
 ---
 
 <Layout title="Welcome to Astro.">

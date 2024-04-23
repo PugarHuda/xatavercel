@@ -7,10 +7,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "xata:codegen": "xata codegen"
+    "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^8.2.5",
     "@xata.io/client": "^0.29.4",
     "astro": "^4.6.3",
     "dotenv": "^16.4.5"
