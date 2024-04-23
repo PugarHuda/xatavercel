@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Pugar-Huda-Mantoro-s-workspace-2k4epc.us-east-1.xata.sh/db/cobacoba",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

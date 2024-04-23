@@ -1,0 +1,17 @@
+{
+  "name": "exotic-escape",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@xata.io/client": "^0.29.4",
+    "astro": "^4.6.3",
+    "dotenv": "^16.4.5"
+  }
+}
