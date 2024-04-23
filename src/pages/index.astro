@@ -2,12 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
-// Generated with CLI
-import { XataClient } from "../xata";
-const xata = new XataClient({ apiKey: xau_sHcg0R5y6IAer6uQii2lQz3O53I0RKzU0 });
+const options = {
+  method: 'POST',
+  headers: {Authorization: 'Bearer xau_sHcg0R5y6IAer6uQii2lQz3O53I0RKzU0', 'Content-Type': 'application/json'},
+  body: '{"page":{"size":15}}'
+};
 
-const page = await xata.db.nyobain.getPaginated();
-console.log(page.records);
+await fetch('https://pugar-huda-mantoro-s-workspace-2k4epc.us-east-1.xata.sh/db/cobacoba:main/tables/nyobain/query', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+
 export const prerender=true;
 ---
 
